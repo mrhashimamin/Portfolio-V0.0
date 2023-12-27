@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #0064ff);
+    border-radius: 9999px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    background-color: #030c1a;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f5f9;
+    position: fixed;
+    height: 100%;
+    width: 25em;
+    padding: 5em 3em 2em 3em;
+
+}
+
+.creator {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.creator img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #0064ff;
+    padding: 0.4em;
+    transition: opacity 0.3s ease;
+}
+
+.creator img:hover {
+    opacity: 0.9;
+}
+
+.creator .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+    color: #030c1a;
+}
+
+.creator .details h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.creator .details p {
+    font-size: 1.2em;
+    margin-top: 0.3em;
+}
+
+.creator .details p span {
+    color: #0064ff;
+}
+
+.creator .details p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.navigation a {
+    font-size: 1.8em;
+    width: fit-content;
+    color: #030c1a;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 0.8em;
+    /* align-items: center; */
+    transition: 0.3s ease;
+}
+
+.navigation a:first-child,
+.navigation a:hover {
+    /* border-bottom: 0.05em solid #095bda; */
+    color: #095bda;
+}
+
+section {
+    padding: 100px 30em;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imgs/bglast.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.main h2 {
+    color: #f3f5f9;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.main h2 span,
+.main h3 span {
+    color: #0064ff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.main h2 span:hover,
+.main h3 span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main h3 {
+    color: #f3f5f9;
+    font-size: 2em;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.main-button {
+    display: block;
+}
+
+.main-button {
+    color: #f3f5f9;
+    text-decoration: none;
+    background: linear-gradient(#0064ff, hwb(216 3% 41%));
+    width: fit-content;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    margin-top: 1em;
+    transition: 0.3s ease;
+}
+
+.main-button:hover {
+    background: linear-gradient(#084196, #042558);
+    transform: scale(1.01);
+}
+
+.main-button:active,
+.main-button:focus {
+    color: #095bda;
+    background: linear-gradient(#f3f5f9, #b5bac2);
+}
+
+.about,
+.skills {
+    padding: 50px 30em;
+    display: flex;
+    background-color: #f3f5f9;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 1.7em;
+    font-size: 500;
+    letter-spacing: 2px;
+    color: #095bda;
+    border-bottom: 1px solid #095bda;
+}
+
+.about-text i {
+    margin-right: 0.5em;
+}
+
+.about-card {
+    margin: 2em 0 0 2em;
+    box-shadow: 0 2px 15px rgba(1 1 1 / 10%);
+    width: fit-content;
+    background-color: #f3f5f9;
+    border-radius: 30px;
+    padding: 1em;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #030c1a;
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.about-card p span {
+    color: #095bda;
+    font-weight: 300;
+}
+
+.about-card p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about-card .main-button {
+    font-size: 1em;
+    margin-left: 1em;
+    letter-spacing: 2px;
+}
+
+.skills-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2em;
+    width: 100%;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30em;
+    padding: 2em;
+    background-color: #f3f5f9;
+    box-shadow: 0 5px 20px rgba(1 1 1 / 10%);
+    border-radius: 30px;
+    margin: 2em 2em 0 1em;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.skills-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-heading i {
+    font-size: 5em;
+    color: #084196;
+}
+
+.skills-heading h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #084196;
+    margin-top: 0.3em;
+}
+
+.skills-heading h4 {
+    color: #095bda;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 0.3em;
+}
+
+.skill-card p {
+    margin-top: 0.5em;
+    color: #030c1a;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 2em;
+    align-items: center;
+    background-color: #dadfe8;
+    padding: 1.5em;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.social-icons:focus,
+.social-icons:active {
+    background-color: #c9ced9;
+}
+
+.social-icons a {
+    color: #095bda;
+    text-decoration: none;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-actions .social-icons {
+    margin-right: 3em;
+}
+
+.social-icons a span {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
